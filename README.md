@@ -4,7 +4,7 @@ This repository contains a PyTorch implementation of the paper "A Multi-branch N
 
 ## Overview of Source Codes
 
-- `data`?contains the input data of our model.
+- `data`: contains the input data of our model.
 - `metrics.py`: contains the evaluation metrics used in our experiments.
 - `GraphInput.py`: contains the construction processes of  the drug molecule graph and the target molecule graph.
 - `data_preprocess.py`: contains the preprocessing of data 
