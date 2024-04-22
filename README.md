@@ -67,13 +67,13 @@ python train_test_S1.py --dataset kiba --cuda_id 0 --num_epochs 2000 --batch_siz
 - Train and test our model on the Davis dataset:
     
 ```shell
-python train_test_S2.py --dataset davis --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
+python train_test_S1.py --dataset davis --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
 ```
     
 - Train and test our model on the KIBA dataset:
     
 ```shell
-    python train_test_S2.py --dataset kiba --cuda_id 0 --num_epochs 200 --batch_size 512 --lr 0.0005 --model 0 --dropedge_rate 0.2 --drug_aff_k 40 --target_aff_k 90 --drug_sim_k 2 --skip
+python train_test_S1.py --dataset kiba --cuda_id 0 --num_epochs 200 --batch_size 512 --lr 0.0005 
 ```
     
 
@@ -82,24 +82,24 @@ python train_test_S2.py --dataset davis --cuda_id 0 --num_epochs 300 --batch_siz
 - Train and test our model on the Davis dataset:
     
 ```shell
-python train_test_S3.py --dataset davis --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
+python train_test_S2.py --dataset davis --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
  ```
     
 - Train and test our model on the KIBA dataset:
     
 ```shell
-python train_test_S3.py --dataset kiba --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
+python train_test_S2.py --dataset kiba --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
 ```   
 #### Setting S3
 - Train and test our model on the Davis dataset:
     
 ```shell
-    python train_test_S4.py --dataset davis --cuda_id 0 --num_epochs 100 --batch_size 512 --lr 0.0005 
+python train_test_S3.py --dataset davis --cuda_id 0 --num_epochs 100 --batch_size 512 --lr 0.0005 
 ```
     
 - Train and test our model on the KIBA dataset:
     
 ```shell
-python train_test_S4.py --dataset kiba --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
+python train_test_S3.py --dataset kiba --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
 ```
 The Davis dataset in the S3 experimental setting has too little data, so we use 100 epoch to prevent overfitting.
