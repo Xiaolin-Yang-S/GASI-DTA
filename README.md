@@ -4,7 +4,7 @@ This repository contains a PyTorch implementation of the paper "A Multi-branch N
 
 ## Overview of Source Codes
 
-- `data/`?contains the input data of our model.
+- `data`?contains the input data of our model.
 - `metrics.py`: contains the evaluation metrics used in our experiments.
 - `GraphInput.py`: contains the construction processes of  the drug molecule graph and the target molecule graph.
 - `data_preprocess.py`: contains the preprocessing of data 
@@ -30,7 +30,7 @@ This repository contains a PyTorch implementation of the paper "A Multi-branch N
 
 ### Data Preparation
 
-Prepare target molecule graphs, please refer to?[Prepare Target Molecule Graphs](https://github.com/Zhaoyang-Chu/HGRL-DTA/tree/main/source/data#2-prepare-for-target-molecule-graphs).
+Prepare target molecule graphs, please refer to?[Prepare Target Molecule Graphs](https://github.com/Xiaolin-Yang-S/GASI-DTA/blob/main/source/data/README.md#prepare-target-molecule-graphs).
 
 ### BenchMark dataset
 
@@ -51,54 +51,55 @@ python train_test.py --dataset davis --cuda_id 0 --num_epochs 2000 --batch_size 
 
 - Train and test our model on the Davis dataset:
     
-    ```shell
+```shell
 python train_test.py --dataset davis --cuda_id 0 --num_epochs 2000 --batch_size 512 --lr 0.0005 
-    ```
+```
     
 - Train and test our model on the KIBA dataset:
     
-    ```shell
+```shell
 python train_test_S1.py --dataset kiba --cuda_id 0 --num_epochs 2000 --batch_size 512 --lr 0.0005 
-    ```
+
+```
 
 ### Cold-start scenarios
 #### Setting S1
 - Train and test our model on the Davis dataset:
     
-    ```shell
+```shell
 python train_test_S2.py --dataset davis --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
-    ```
+```
     
 - Train and test our model on the KIBA dataset:
     
-    ```shell
+```shell
     python train_test_S2.py --dataset kiba --cuda_id 0 --num_epochs 200 --batch_size 512 --lr 0.0005 --model 0 --dropedge_rate 0.2 --drug_aff_k 40 --target_aff_k 90 --drug_sim_k 2 --skip
-    ```
+```
     
 
 
 #### Setting S2
 - Train and test our model on the Davis dataset:
     
-    ```shell
+```shell
 python train_test_S3.py --dataset davis --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
-    ```
+ ```
     
 - Train and test our model on the KIBA dataset:
     
-    ```shell
+```shell
 python train_test_S3.py --dataset kiba --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
-    ```   
+```   
 #### Setting S3
 - Train and test our model on the Davis dataset:
     
-    ```shell
+```shell
     python train_test_S4.py --dataset davis --cuda_id 0 --num_epochs 100 --batch_size 512 --lr 0.0005 
-    ```
+```
     
 - Train and test our model on the KIBA dataset:
     
-    ```shell
+```shell
 python train_test_S4.py --dataset kiba --cuda_id 0 --num_epochs 300 --batch_size 512 --lr 0.0005 
-    ```
-    The Davis dataset in the S3 experimental setting has too little data, so we use 100 epoch to prevent overfitting.
+```
+The Davis dataset in the S3 experimental setting has too little data, so we use 100 epoch to prevent overfitting.
