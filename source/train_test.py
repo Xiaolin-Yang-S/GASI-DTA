@@ -47,21 +47,15 @@ def train_test():
     cuda_name = f'cuda:{FLAGS.cuda_id}'
     TRAIN_BATCH_SIZE = FLAGS.batch_size
     TEST_BATCH_SIZE = FLAGS.batch_size
-    cross_test = FLAGS.cross_test
-    # NUM_EPOCHS = FLAGS.num_epochs
-    NUM_EPOCHS = 2000
+    NUM_EPOCHS = FLAGS.num_epochs
     LR = FLAGS.lr
 
     Architecture = GASIDTA
 
     fold = FLAGS.fold
 
-    dataset = 'davis'
-    cuda_name = f'cuda:1'
 
     model_name = Architecture.__name__
-    if not FLAGS.weighted:
-        model_name += "-noweight"
     if fold != -100:
         model_name += f"-{fold}"
 

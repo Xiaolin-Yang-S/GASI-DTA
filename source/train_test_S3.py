@@ -108,9 +108,6 @@ def train_test():
     Architecture = GASIDTA_cold
     model_name = Architecture.__name__
 
-    NUM_EPOCHS = 300
-    dataset = 'kiba'
-    cuda_name = f'cuda:1'
 
     print("Dataset:", dataset)
     print("Cuda name:", cuda_name)

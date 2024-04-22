@@ -1,3 +1,4 @@
+# Code reference from HGR-DTA(https://github.com/Zhaoyang-Chu/HGRL-DTA/)
 import os
 import pickle, argparse
 import random
@@ -21,14 +22,7 @@ def argparser():
     parser.add_argument('--lr', type=float, help='Initial learning rate to train', default=0.0005)
     parser.add_argument('--model', type=int, help='Model id', default=0)
     parser.add_argument('--fold', type=int, help='Fold of 5-CV', default=-100)
-    parser.add_argument('--weighted', help='Whether affinity graph is weighted', action='store_false')
     parser.add_argument('--dropedge_rate', type=float, help='Rate of edge dropout', default=0.2)
-    parser.add_argument('--drug_sim_k', type=int, help='Similarity topk of drug', default=2)
-    parser.add_argument('--target_sim_k', type=int, help='Similarity topk of target', default=7)
-    parser.add_argument('--drug_aff_k', type=int, help='Affinity topk of drug', default=40)
-    parser.add_argument('--target_aff_k', type=int, help='Affinity topk of target', default=150)  # target_aff_k = 90, when conducting the S2 and S4 experiments on the KIBA dataset
-    parser.add_argument('--skip', help='Whether the skip connection operation is used', action='store_true')
-    parser.add_argument('--cross_test', type=int, help='for cross validation test', default=0)
     parser.add_argument('--seed', type=int, help='random seed', default=1)
     FLAGS, unparsed = parser.parse_known_args()
 

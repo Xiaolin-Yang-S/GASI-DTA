@@ -84,9 +84,7 @@ def train_test():
     if fold != -100:
         model_name += f"-{FLAGS.drug_sim_k}-{fold}"
 
-    NUM_EPOCHS = 300
-    cuda_name = f'cuda:1'
-    dataset = 'davis'
+
 
     print("Dataset:", dataset)
     print("Cuda name:", cuda_name)

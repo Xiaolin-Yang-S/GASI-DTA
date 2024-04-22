@@ -1,3 +1,5 @@
+# Code reference from HGR-DTA(https://github.com/Zhaoyang-Chu/HGRL-DTA/)
+
 import numpy as np
 from lifelines.utils import concordance_index
 from sklearn.metrics import precision_recall_curve, auc
