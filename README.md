@@ -30,7 +30,8 @@ This repository contains a PyTorch implementation of the paper "A Multi-branch N
 
 ### Data Preparation
 
-Prepare target molecule graphs, please refer to?[Prepare Target Molecule Graphs](https://github.com/Xiaolin-Yang-S/GASI-DTA/blob/main/source/data/README.md#prepare-target-molecule-graphs).
+- Prepare target molecule graphs, please refer to [Prepare Target Molecule Graphs](https://github.com/Xiaolin-Yang-S/GASI-DTA/blob/main/source/data/README.md#prepare-target-molecule-graphs).
+- run data_preprocess.py
 
 ### BenchMark dataset
 
