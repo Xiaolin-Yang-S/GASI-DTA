@@ -10,9 +10,9 @@ This repository contains a PyTorch implementation of the paper "A Multi-branch N
 - `data_preprocess.py`: contains the preprocessing of data 
 - `model.py`: contains our GASI-DTA.
 - `train_test.py`: contains the training and testing processes on the benchmark dataset.
-- `train_test_S1.py`: contains the training and testing processes under the?**S1**?setting.
-- `train_test_S2.py`: contains the training and testing processes under the?**S2**?setting.
-- `train_test_S3.py`: contains the training and testing processes under the?**S3**?setting.
+- `train_test_S1.py`: contains the training and testing processes under the **S1** setting.
+- `train_test_S2.py`: contains the training and testing processes under the **S2** setting.
+- `train_test_S3.py`: contains the training and testing processes under the **S3** setting.
 - `utils.py`: contains utility functions.
 
 ## Dependencies
