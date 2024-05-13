@@ -59,7 +59,7 @@ python train_test.py --dataset davis --cuda_id 0 --num_epochs 2000 --batch_size 
 - Train and test our model on the KIBA dataset:
     
 ```shell
-python train_test_S1.py --dataset kiba --cuda_id 0 --num_epochs 2000 --batch_size 512 --lr 0.0005 
+python train_test.py --dataset kiba --cuda_id 0 --num_epochs 2000 --batch_size 512 --lr 0.0005 
 
 ```
 
